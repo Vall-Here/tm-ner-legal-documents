@@ -1,0 +1,7 @@
+.venv
+Code/main/nltk_data/
+Code/main/legal-ner-model/
+
+Datasets/PDF/
+Datasets/TXT/
+Datasets/preprocessingTXT/
