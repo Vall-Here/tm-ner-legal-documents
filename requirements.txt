@@ -1,6 +1,11 @@
 numpy
-tensorflow
+# tensorflow
 scikit-learn
 pandas
 nltk
 spacy
+accelerate 
+datasets 
+evaluate 
+seqeval
+transformers[torch]
