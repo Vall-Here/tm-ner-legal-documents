@@ -10,22 +10,23 @@ BASE_DIR = Path(__file__).parent
 PROJECT_ROOT = BASE_DIR.parent
 MODEL_DIR = PROJECT_ROOT / "Code" / "main" / "models" / "model_final"
 
+
 # Model configuration
 MODEL_CONFIG = {
     "model_path": MODEL_DIR / "model_artifacts",
     "config_path": MODEL_DIR,
     "max_length": 512,
-    "max_text_length": 5000,  # Maximum text length for processing
+    "max_text_length": 125000,  # Maximum text length for processing
     "batch_size": 1,
     "device": "auto",  # auto, cpu, cuda
 }
-
+# print(f"Model path: {MODEL_CONFIG}")
 # UI configuration
 UI_CONFIG = {
     "title": "Indonesian Legal NER",
     "description": "Extract named entities from Indonesian legal documents",
     "theme": "soft",  # default, soft, monochrome, etc.
-    "share": True,
+    "share": False,
     "server_port": 7860,
     "server_name": "0.0.0.0",
 }
